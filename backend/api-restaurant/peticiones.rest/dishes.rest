@@ -1,0 +1,48 @@
+@host = http://localhost:3000
+
+###                                              obtener todos los platos 
+
+
+GET {{host}}/api/dishes
+
+###                                             obtener plato por categoria
+
+
+GET {{host}}/api/dishes/category/primer plato
+
+###                                                obtener plato por id
+
+
+GET {{host}}/api/dishes/2
+
+###                                                    crear plato
+
+
+POST {{host}}/api/dishes
+Content-Type: application/json
+
+
+{
+  "name": "Hamburguesa",
+  "description": "hamburguesa de carne de vaca india",
+  "price": 18.50,
+  "available": true,
+  "category": "primer plato",
+  "imageUrl": "url",
+  "allergenIds": [1, 3],
+  "extraIds": [4, 7]
+}
+
+###                                                editar plato por id 
+
+PUT {{host}}/api/dishes/2
+Content-Type: application/json
+
+
+{
+  "name": "pito",
+  "category": "segundo plato"
+}
+
+###                                              eliminar plato por id 
+DELETE  {{host}}/api/dishes/1
