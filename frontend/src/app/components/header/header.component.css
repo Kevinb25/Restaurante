@@ -1,0 +1,63 @@
+.headerTop {
+    background-color: rgb(0, 8, 95);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    width: auto;
+
+
+}
+
+.logo {
+
+
+    img {
+        width: 70px;
+        height: 70px;
+        max-width: 100%;
+        max-height: 100%;
+        border: 1px solid black;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+h1 {
+    color: white;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: auto;
+
+    div {
+        height: 0.140rem;
+        width: 2rem;
+        background-color: rgb(255, 255, 255);
+        margin: 0.300rem 0;
+    }
+
+}
+
+.navegador {
+    background-color: white;
+    padding: 1rem 3rem;
+    text-align: center;
+
+
+    li {
+        font-size: 1rem;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 8, 95);
+        }
+    }
+}

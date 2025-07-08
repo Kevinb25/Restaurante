@@ -1,0 +1,27 @@
+<div class="headerTop">
+    <div class="logo">
+        <img src="/images/locoOleArepa.jpeg" alt="LogoOleMadrid">
+    </div>
+    <h1>Ole Venezuela</h1>
+
+    <div class="burger" (click)="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+@if (menuAbierto) {
+<div class="headerBotton">
+    <nav class="navegador">
+        <ul>
+            <li><a href="registrate">Registrate</a></li>
+            <li><a href="IniciarSesion">Iniciar Sesion</a></li>
+            <li><a href="menu">Menu</a></li>
+            <li><a href="Delivery">Delivery</a></li>
+            <li><a href="Contactos">About ME</a></li>
+
+        </ul>
+    </nav>
+</div>
+}

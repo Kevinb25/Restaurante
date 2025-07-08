@@ -1,0 +1,12 @@
+<section>
+    <h2> Menu</h2>
+    <div class="dishes">
+        @for (dish of dishes; track dish.id){
+        <div class="dish">
+            <h4>{{dish.name}}</h4>
+            <p>{{dish.price}}</p>
+            <p>{{dish.description}}</p>
+        </div>
+        }
+    </div>
+</section>
