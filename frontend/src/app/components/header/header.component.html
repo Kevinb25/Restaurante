@@ -1,27 +1,25 @@
-<div class="headerTop">
-    <div class="logo">
-        <img src="/images/locoOleArepa.jpeg" alt="LogoOleMadrid">
+<div class="headerContainer">
+    <div class="headerTop">
+        <div class="logo">
+            <img src="/images/locoOleArepa.jpeg" alt="LogoOleMadrid">
+        </div>
+
+        <div class="burger" (click)="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-    <h1>Ole Venezuela</h1>
 
-    <div class="burger" (click)="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
+    @if (menuAbierto) {
+    <div class="headerBottom">
+        <nav class="navegador">
+            <ul>
+                <li class="yellow"><a href="reserva">Reserva</a></li>
+                <li class="blue"><a href="menu">Menu</a></li>
+                <li class="red"><a href="Delivery">Delivery</a></li>
+            </ul>
+        </nav>
     </div>
+    }
 </div>
-
-@if (menuAbierto) {
-<div class="headerBotton">
-    <nav class="navegador">
-        <ul>
-            <li><a href="registrate">Registrate</a></li>
-            <li><a href="IniciarSesion">Iniciar Sesion</a></li>
-            <li><a href="menu">Menu</a></li>
-            <li><a href="Delivery">Delivery</a></li>
-            <li><a href="Contactos">About ME</a></li>
-
-        </ul>
-    </nav>
-</div>
-}

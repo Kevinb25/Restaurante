@@ -1,5 +1,12 @@
-<div class="containter">
+<div class="container">
     <div class="hero">
-        <img [src]="imagenes[indiceActual]" alt="Imagen Hero">
+        <img [src]="imagenes[indiceActual].src" alt="Imagen Hero">
+
+        <div class="hero-content">
+            <h1>{{ imagenes[indiceActual].texto }}</h1>
+            <a [href]="imagenes[indiceActual].linkHref" class="hero-link">
+                {{ imagenes[indiceActual].linkText }}
+            </a>
+        </div>
     </div>
 </div>
